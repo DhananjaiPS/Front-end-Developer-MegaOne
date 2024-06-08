@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaOne</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo&family=Kalam:wght@300;400;700&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            
+        }
+
+
+
+        body {
+        }
+
+        .hero {
+            background: url(hero2.jpg);
+            min-height: 100vh;
+            background-position: center right;
+            background-size: contain;
+
+        }
+
+        .logo {
+            padding: 13px;
+            margin: 7px;
+            font-size: 2rem;
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 50px;
+
+
+        }
+
+        @media only screen and (max-width:20px) {
+            .nav {
+                background-color: aliceblue;
+            }
+        }
+
+        .options {
+
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .options a {
+            padding: 12px;
+            padding-bottom: 30px;
+            margin: 7px;
+            border: none;
+
+            text-decoration: none;
+            height: 50px;
+            font-size: 1.2rem;
+            color: white;
+
+        }
+
+        .home a {
+            position: relative;
+            top: 25px;
+            padding: 16px;
+            padding-bottom: 13px;
+            margin: 7px;
+            border: none;
+            text-decoration: none;
+            height: 50px;
+            font-size: 1rem;
+            border-radius: 32px;
+            color: aliceblue;
+            background-color: #84b813;
+        }
+
+        .menu {
+            padding: 13px;
+            margin: 7px;
+            position: relative;
+            top: -5px;
+            color: white;
+            font-size: 2rem;
+        }
+
+
+
+        @media only screen and (max-width:668px) {
+            body {
+                background-color: red;
+            }
+
+        }
+
+        .heading {
+            color: aliceblue;
+            min-height: 40vh;
+            max-width: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            top: 230px;
+            left: 80px;
+
+        }
+
+        .p1 {
+            font-size: 2rem;
+            font-family: 'Baloo Bhai';
+
+        }
+
+        .p2 {
+            font-size: 4rem;
+            font-weight: bolder;
+            color: #84b813;
+
+            font-family: 'Baloo Bhai';
+
+        }
+
+        /* .p3 {} */
+
+        .p4 button {
+            padding: 13px;
+            font-size: 1rem;
+            border-radius: 23px;
+            background-color: rgb(218, 12, 47);
+            color: white;
+            border: none;
+            width: 130px;
+            transition: 1s;
+
+        }
+
+        .p4 button:hover {
+            background-color: #84b813;
+            font-size: 1.2rem;
+
+        }
+
+        .threebox {
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: -80px;
+
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+
+            height: 35vh;
+            width: 42vh;
+            background-color: rgb(218, 12, 47);
+            border-top-left-radius: 43px;
+
+        }
+
+        .subbox1 {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+
+            font-weight: 400;
+
+
+        }
+
+        .subbox2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            font-size: 1.4rem;
+            font-weight: 400;
+
+        }
+
+        .subbox3 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5px;
+            margin: 10px;
+            color: aliceblue;
+            flex-direction: column;
+            font-weight: 400;
+
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+
+            height: 35vh;
+            width: 42vh;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box3 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            border-bottom-right-radius: 43px;
+            height: 35vh;
+            width: 42vh;
+            background-color: #84b813;
+        }
+
+        .stat1 {
+            min-height: 33vh;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .substat1 {
+            height: 30vh;
+            width: 70vh;
+            /* background-color: antiquewhite; */
+            justify-content: space-around;
+            padding: 4px;
+        }
+
+        .substat2 {
+            height: 30vh;
+            width: 70vh;
+            /* background-color: rgb(245, 145, 14); */
+            justify-content: space-around;
+            position: relative;
+            top: -25px;
+            display: flex;
+            flex-direction: column;
+            padding: 13px;
+            font-size: 1.1rem;
+        }
+
+        .subst11 {
+            font-size: 1.64rem;
+            color: rgb(218, 12, 47);
+            font-family: 'Baloo Bhai';
+
+        }
+
+        .subst12 {
+            font-size: 3rem;
+            color: #84b813;
+            font-weight: 500;
+            font-family: 'Baloo Bhai';
+
+        }
+
+        /* .para1 {}
+
+        .para2 {} */
+
+        .bar1 {
+            height: 2vh;
+            width: 60vh;
+            border: 1px solid black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+        }
+
+        .pctbar1 {
+            height: 2vh;
+            width: 50vh;
+            position: relative;
+            top: -22px;
+            /* border: 1px solid black; */
+            background-color: rgb(218, 12, 47);
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+
+        .bar2 {
+            height: 2vh;
+            width: 60vh;
+            border: 1px solid black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+        }
+
+        .pctbar2 {
+            height: 2vh;
+            width: 40vh;
+            position: relative;
+            top: -22px;
+            /* border: 1px solid black; */
+            background-color: #84b813;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+
+        .bar3 {
+            height: 2vh;
+            width: 60vh;
+            border: 1px solid black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+        }
+
+        .pctbar3 {
+            height: 2vh;
+            width: 55vh;
+            position: relative;
+            top: -22px;
+            /* border: 1px solid black; */
+            background-color: rgb(218, 12, 47);
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+
+        .stat2 {
+            height: 30vh;
+            display: flex;
+            justify-content: space-evenly;
+
+
+
+        }
+
+        .h {
+            display: flex;
+            position: relative;
+            top: -22px;
+            padding-left: 23px;
+            padding-right: 23px;
+
+            justify-content: space-between;
+        }
+
+        .barzone1 {
+            height: 50vh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            /* padding: 50px; */
+
+        }
+
+        .barzone2 {
+            height: 50vh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            /* padding: 50px; */
+
+
+        }
+
+        .foodform {
+            min-height: 100vh;
+            background: url(hero3.jpg);
+            background-position: bottom right;
+            background-size: cover;
+            position: relative;
+            background-repeat: no-repeat;
+            background-color: rgb(16, 14, 14);
+            top: 99px;
+            /* font-family: "Kalam", cursive; */
+            font-weight: 400;
+            font-style: normal;
+
+
+
+        }
+
+        .pa1 {
+            font-size: 3rem;
+            color: rgb(251, 27, 65);
+            /* width:150px;
+            text-align: right; */
+            margin-bottom: 5vh;
+            /* font-family: "Kalam", cursive; */
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Baloo Bhai';
+        }
+
+        .pa2 {
+            font-size: 1.2rem;
+            color: aliceblue;
+            margin-bottom: 5vh;
+            /* font-family: "Kalam", cursive; */
+            font-weight: 400;
+            font-style: normal;
+            /* width:150px; */
+            /* text-align: right; */
+        }
+
+        form {
+            /* width:120px; */
+            border: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+        }
+
+        ::placeholder {
+            color: rgb(255, 255, 255);
+
+        }
+
+        form input {
+            height: 6vh;
+            width: 29vh;
+            margin: 1.2vh;
+            text-align: center;
+            font-size: 1rem;
+            background-color: transparent;
+            border: 1px solid white;
+
+            border-radius: 23px;
+
+
+            color: aliceblue;
+
+
+        }
+
+        form input:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        ::placeholder:hover {
+
+            color: black;
+        }
+
+        .subfoodform {
+            width: 80vh;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #84b813; */
+            position: relative;
+            right: -8vh;
+            top: 22vh;
+            padding: 2vh;
+            justify-content: space-evenly;
+
+
+        }
+
+        .btn1 {
+            width: 60vh;
+            height: 8vh;
+            color: aliceblue;
+            padding: 1vh;
+            margin-top: 9vh;
+            font-size: 1.2rem;
+            margin-left: 7vh;
+            border-radius: 33px;
+            border: 1px solid white;
+            background-color: transparent;
+
+
+        }
+
+        .btn1:hover {
+            background-color: #84b813;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .mahak {
+            min-height: 100vh;
+            position: relative;
+            top: 16vh;
+
+
+        }
+
+        .numbers {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            min-height: 40vh;
+            /* background-color: black; */
+            z-index: 100;
+        }
+
+        .num {
+            position: relative;
+            top: -4vh;
+            color: #ffffff;
+            z-index: 100;
+            font-size: 1.6rem;
+
+        }
+
+        .picnum {
+            opacity: 1;
+
+            background: url(numpic1.jpg);
+            height: 45vh;
+            width: 100%;
+            z-index: 10;
+            position: relative;
+            top: 30vh;
+            color: white;
+            background-position: center;
+            background-size: cover;
+
+        }
+    </style>
+
+
+    <style type="text/css">
+        .fa-utensils {
+            font-size: 20px;
+        }
+
+        .fa-cake-candles {
+            font-size: 30px;
+        }
+
+        .fa-bell-concierge {
+            font-size: 30px;
+        }
+
+        .fa-pizza-slice {
+            font-size: 30px;
+        }
+
+        .fa-mug-hot {
+            font-size: 30px;
+        }
+
+        .fa-martini-glass-citrus {
+            font-size: 30px;
+        }
+
+        .os1 {
+            padding: 2.1vh;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .menu2 {
+            color: rgb(0, 0, 0);
+            min-height: 70vh;
+
+
+        }
+
+        .menutext {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 30vh;
+            padding: 23px;
+            font-size: 2rem;
+            font-weight: 800;
+
+
+
+
+        }
+
+        .submenutitle {
+            font-family: 'Baloo Bhai';
+            font-weight: 500;
+            font-size: 2.4rem;
+        }
+
+        .submenupara {
+            font-size: 1rem;
+            width: 70vh;
+            font-weight: 400;
+        }
+
+        .submenubtn {
+
+            width: 80vh;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .submenubtn button {
+            width: 14vh;
+            height: 5vh;
+            font-size: 1rem;
+        }
+
+        .menupics {
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            flex-wrap: wrap;
+            max-width: 150vh;
+            align-items: center;
+            padding-left: 0;
+
+
+        }
+
+        .menupic1 {
+            background-color: blue;
+            height: 220px;
+            width: 280px;
+            margin: 18px;
+            background: url(food1.jpg);
+            background-position: center;
+            background-size: cover;
+
+
+        }
+
+        .menupic2 {
+            background-color: blue;
+            height: 220px;
+            width: 280px;
+            margin: 18px;
+            background: url(food2.jpg);
+            background-position: center;
+            background-size: cover;
+
+
+        }
+
+        .menupic3 {
+            background-color: blue;
+            height: 220px;
+            width: 280px;
+            margin: 18px;
+            background: url(food3.jpg);
+            background-position: center;
+            background-size: cover;
+
+
+        }
+
+        .menupic4 {
+            background-color: blue;
+            height: 220px;
+            width: 280px;
+            margin: 18px;
+            background: url(food4.jpg);
+            background-position: center;
+            background-size: cover;
+
+
+        }
+
+        .menupic5 {
+            background-color: blue;
+            height: 220px;
+            width: 280px;
+            margin: 18px;
+            background: url(food5.jpg);
+            background-position: center;
+            background-size: cover;
+
+
+        }
+
+        .menupic6 {
+            background-color: blue;
+            height: 220px;
+            width: 280px;
+            margin: 18px;
+            background: url(food6.jpg);
+            background-position: center;
+            background-size: cover;
+
+
+        }
+
+        .btn2 {
+            background-color: #84b813;
+            color: #ffffff;
+            border: none;
+            border-top-left-radius: 13px;
+            ;
+        }
+
+        .btn3 {
+            background-color: rgb(245, 55, 87);
+            ;
+            color: #ffffff;
+            border: none;
+            border-bottom-right-radius: 13px;
+        }
+
+        .btn4 {
+            background-color: rgb(245, 55, 87);
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .testmonial {
+            min-height: 100vh;
+            background: url(testimonial-img.jpg);
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+
+        }
+
+
+
+        .testtext {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            max-width: 90vh;
+            color: #ffffff;
+
+        }
+
+        .testtitle {
+            padding: 4vh;
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+            font-family: 'Baloo Bhai';
+        }
+
+        .testboxes {
+            display: flex;
+            max-width: 190vh;
+            margin: auto;
+            justify-content: center;
+            position: relative;
+            top: 17vh;
+
+
+        }
+
+        .testbox1 {
+            height: 49vh;
+            width: 45vh;
+            background-color: rgb(255, 255, 255);
+            margin: 2vh;
+            margin-top: 15vh;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            border-bottom-right-radius: 33px;
+            border-top-left-radius: 33px;
+
+
+
+
+        }
+
+        .testbox2 {
+            height: 49vh;
+            width: 45vh;
+            background-color: rgb(255, 255, 255);
+            margin: 2vh;
+            margin-top: 15vh;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            border-radius: 33px;
+
+
+
+        }
+
+        .testbox3 {
+            height: 49vh;
+            width: 45vh;
+            background-color: rgb(255, 255, 255);
+            margin: 2vh;
+            margin-top: 15vh;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            border-bottom-right-radius: 33px;
+            border-top-left-radius: 33px;
+
+
+
+        }
+
+
+        .testicon {
+            font-size: 2.6rem;
+            color: #84b813;
+        }
+
+        .testpara {
+            padding: 35px;
+            display: flex;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .testpropic1 {
+            background: url(per1.jpg);
+            width: 9vh;
+            height: 9vh;
+            background-position: center;
+            background-size: cover;
+            border-radius: 100%;
+
+        }
+
+        .testpropic2 {
+            background: url(per2.jpg);
+            width: 9vh;
+            height: 9vh;
+            background-position: center;
+            background-size: cover;
+            border-radius: 100%;
+
+        }
+
+        .testpropic3 {
+            background: url(per3.jpg);
+            width: 9vh;
+            height: 9vh;
+            background-position: center;
+            background-size: cover;
+            border-radius: 100%;
+
+        }
+
+        .testname {
+            font-size: 1.2rem;
+            color: rgb(231, 36, 36);
+            font-weight: 500;
+            font-family: 'Baloo Bhai';
+
+        }
+
+        .testaddress {
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Baloo Bhai';
+        }
+
+        .more {
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 20vh;
+            color: #ffffff;
+            /* background-color: blue; */
+        }
+
+        .blogs {
+            min-height: 100vh;
+            background-color: aliceblue;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-evenly;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+
+
+
+
+        }
+
+        .blogs1 {
+            display: flex;
+            justify-content: space-around;
+            min-height: 50vh;
+
+            margin: auto;
+            flex-direction: column;
+
+
+        }
+
+        .blpic1 {
+            min-height: 70vh;
+            width: 60vh;
+            background-color: #84b813;
+            margin: 1vh;
+            background: url(fruit1.jpg);
+            background-position: center bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 133px;
+
+        }
+
+        .bltxt1 {
+            min-height: 15vh;
+            width: 60vh;
+            /* background-color: #464a3d; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+
+        }
+
+        .blsubtxt1 {
+            margin: 1vh;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            font-family: 'Baloo Bhai';
+        }
+
+        .blsubtxt2 {
+            margin: 1.5vh;
+
+        }
+
+        .blsubtxt3 {
+            display: flex;
+            justify-content: end;
+            margin-right: 4vh;
+            margin-top: 2vh;
+
+        }
+
+        .blsubtxt3 button {
+            background-color: #84b813;
+            color: #ffffff;
+            width: 20vh;
+            margin: 1vh;
+            padding: 1.2vh;
+            font-size: 1.1rem;
+            border-radius: 33px;
+            border: none;
+
+
+        }
+
+
+        .blogs2 {
+            display: flex;
+            justify-content: space-around;
+            min-height: 50vh;
+            flex-direction: column;
+            /* width: 100%; */
+            margin: auto;
+
+        }
+
+        .bltxt2 {
+            min-height: 30vh;
+            width: 60vh;
+            /* background-color: #464a3d; */
+            margin: 1vh;
+            font-family: 'Baloo Bhai', sans-serif;
+            ;
+
+        }
+
+        .blpic2 {
+            min-height: 70vh;
+            width: 60vh;
+            background-color: #84b813;
+            margin: 1vh;
+            background: url(bg3.jpg);
+            background-position: center;
+            background-size: cover;
+            border-bottom-right-radius: 133px;
+
+
+        }
+
+        .location{
+            min-height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="nav">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="options">
+                <div class="home"><a href="">Home</a></div>
+                <a href="about">About</a>
+                <a href="">Reservation</a>
+                <a href="">Our Menu</a>
+                <a href="">Our Blog</a>
+                <a href="">Contact Us</a>
+                <a href=""><ion-icon name="search-outline"></ion-icon></a>
+            </div>
+            <div class="menu"><ion-icon name="menu"></ion-icon></div>
+        </div>
+        <div class="heading">
+            <p class="p1">Our Delicious</p>
+            <p class="p2">Tandoori Panner </p>
+            <p class="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid non eligendi ipsum similique
+                consectetur, ex modi iusto, rem possimus dolor molestiae, laudantium neque debitis error!</p>
+
+            <p class="p4"><button>Buy Now</button></p>
+        </div>
+    </div>
+    <div class="threebox">
+        <div class="box1">
+            <div class="subbox1"><ion-icon name="fast-food-sharp"></ion-icon></div>
+            <div class="subbox2">We are Food lover</div>
+            <div class="subbox3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa, laboriosam ea optio
+                eos eaque?</div>
+        </div>
+        <div class="box2">
+            <div class="subbox1" style="color: black;"><ion-icon name="pizza-sharp"></ion-icon></div>
+            <div class="subbox2" style="color: black;">Diversity in food</div>
+            <div class="subbox3" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                ipsa, laboriosam ea optio eos eaque?</div>
+
+        </div>
+        <div class="box3">
+            <div class="subbox1"><ion-icon name="time-outline"></ion-icon></div>
+            <div class="subbox2">Opening Hour</div>
+            <div class="subbox3">
+                <div>Mon-Sat 9:00 AM-11:00 PM</div>
+                <div>Mon-Sat 9:00 AM-11:00 PM</div>
+                <div>Sunday 1:00 PM-11:00 PM</div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="stat1">
+        <div class="substat1">
+            <div class="subst11" id="about">Good and Healthy life</div>
+            <div class="subst12">We Served the Best Food in Town</div>
+
+        </div>
+        <div class="substat2">
+            <div class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad expedita sint cumque, et
+                dolor blanditiis?</div>
+            <div class="para2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis aut
+                facilis dolor culpa soluta quas vero eveniet provident vitae.</div>
+
+        </div>
+
+    </div>
+    <div class="stat2">
+        <div class="barzone1">
+            <div class="bar1">
+                <div class="h">
+                    <div class="s1">Fresh & Organic</div>
+                    <div class="s2">80 %</div>
+                </div>
+                <div class="pctbar1"></div>
+
+            </div>
+            <div class="bar2">
+                <div class="h">
+                    <div class="s1">Easy Reservation</div>
+                    <div class="s2">50 %</div>
+                </div>
+                <div class="pctbar2"></div>
+
+            </div>
+            <div class="bar3">
+                <div class="h">
+                    <div class="s1">Quality Cusine</div>
+                    <div class="s2">66 %</div>
+                </div>
+                <div class="pctbar3"></div>
+
+            </div>
+        </div>
+        <div class="barzone2">
+            <div class="bar1">
+                <div class="h">
+                    <div class="s1">Professional Staff</div>
+                    <div class="s2">67 %</div>
+                </div>
+                <div class="pctbar1" style="background-color: #84b813;"></div>
+
+            </div>
+            <div class="bar2">
+                <div class="h">
+                    <div class="s1">24/7 food Delivery</div>
+                    <div class="s2">47 %</div>
+                </div>
+                <div class="pctbar2" style="background-color: rgb(218, 12, 47);"></div>
+
+            </div>
+            <div class="bar3">
+                <div class="h">
+                    <div class="s1">Repeat Rate </div>
+                    <div class="s2">76 %</div>
+                </div>
+                <div class="pctbar3" style="background-color: #84b813;"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="foodform">
+        <div class="subfoodform">
+            <para class="pa1">BOOK YOUR TABLE</para>
+            <para class="pa2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto numquam doloremque
+                deleniti iusto, ratione rem.</para>
+
+
+            <form>
+                <input type="text " placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="date" placeholder="Date">
+                <input type="number" placeholder="Total People">
+            </form>
+            <button class="btn1">Book Your Seat Now</button>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="mahak">
+        <h3 align="center" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 1.6rem;color: rgb(231, 36, 36);>
+            <font color=" #e02f46"> We Are Professionals </font>
+        </h3>
+        <br>
+        <h1 align="center" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 3rem;"> Our Specialities </h1>
+
+        <br>
+        <center>
+            <table cellspacing="40">
+                <tr>
+                    <th colospan="4"></th>
+
+                </tr>
+
+                <tr>
+                    <td valign="top" bgcolor="#84b813" align="center" class="os1"><i class="fa-solid fa-utensils"></i>
+                    </td>
+                    <th align="left" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 1.2rem"> Cutlery</th>
+                    <td valign="top" bgcolor="e02f46" align="center" class="os1"><i
+                            class="fa-solid fa-cake-candles"></i>
+                    <th align="left" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 1.2rem"> Cake</th>
+                    <td valign="top" bgcolor="#84b813" align="center" class="os1"><i
+                            class="fa-solid fa-bell-concierge"></i>
+
+                    <th align="left" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 1.2rem"> Services
+                    </th>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Phasellus eu scelerisque ligula.<br> Pellentesque sollicitudin quis orci<br> laoreet
+                        vehicula.</td>
+                    <td colspan="2">Phasellus eu scelerisque ligula.<br> Pellentesque sollicitudin quis orci<br> laoreet
+                        vehicula.</td>
+                    <td colspan="2">Proin feugiat ex pharetra neque<br> vestibulum consectetur. Donec non<br> turpis et
+                        leo luctus.</td>
+                </tr>
+                <tr>
+                    <td valign="top" bgcolor="e02f46" align="center" class="os1"> <i
+                            class="fa-solid fa-pizza-slice"></i></td>
+                    <th align="left" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 1.2rem;">Pizza </th>
+                    <td valign="top" bgcolor="#84b813" align="center" class="os1"><i class="fa-solid fa-mug-hot"></i>
+                    </td>
+                    <th align="left" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 1.2rem">Tea & Coffee
+                    </th>
+                    <td valign="top" bgcolor="e02f46" align="center" class="os1"><i
+                            class="fa-solid fa-martini-glass-citrus"></i></td>
+                    <th align="left" style="font-family: 'Baloo Bhai'; font-weight: 500;font-size: 1.2rem"> Fresh Jucies
+                    </th>
+                </tr>
+
+
+
+                <tr>
+                    <td colspan="2">Duis imperdiet convallis lorem. Sed<br> efficitur lacus eget purus mattis,
+                        ac<br> mollis justo porttitor.</td>
+                    <td colspan="2">Duis imperdiet convallis lorem. Sed<br> efficitur lacus eget purus
+                        mattis, ac<br> mollis justo porttitor. </td>.
+                    <td colspan="2">Lorem ipsum dolor sit amet,<br> consectetur elit. Curabitur at
+                        blandit<br> duiut consequat ex. </td>
+                </tr>
+
+
+            </table>
+        </center>
+
+
+
+
+    </div>
+    <div class="picnum"></div>
+    <div class="numbers">
+        <div class="num">
+            <p>1389</p>
+            <span><ion-icon name="remove-sharp"></ion-icon></span>
+            <p>Happy Clients</p>
+        </div>
+        <div class="num">
+            <p>1007</p>
+            <span><ion-icon name="remove-sharp"></ion-icon></span>
+            <p>Cooked Items</p>
+        </div>
+        <div class="num">
+            <p>1821</p>
+            <span><ion-icon name="remove-sharp"></ion-icon></span>
+            <p>Food Dilivered</p>
+        </div>
+        <div class="num">
+            <p>1008</p>
+            <span><ion-icon name="remove-sharp"></ion-icon></span>
+            <p>Cups Of Coffee</p>
+        </div>
+    </div>
+    <div class="menu2">
+        <div class="menutext">
+            <div class="submenutitle">Our Menu</div>
+            <div class="submenupara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+                Vivamus gravida, neque nec interdum cursus, erat ligula.</div>
+
+            <div class="submenubtn">
+                <button class="btn2">All</button>
+                <button class="btn4">Breakfast</button>
+                <button class="btn4">Lunch</button>
+                <button class="btn4">Dinner</button>
+                <button class="btn3">desserts</button>
+
+            </div>
+        </div>
+        <div class="menupics">
+            <div class="menupic1"></div>
+            <div class="menupic2"></div>
+            <div class="menupic3"></div>
+            <div class="menupic4"></div>
+            <div class="menupic5"></div>
+            <div class="menupic6"></div>
+        </div>
+        <div class="testmonial">
+            <div class="shade"></div>
+            <div class="testtext">
+                <div class="testtitle">Happy Customer</div>
+                <div class="testsubtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                    dolor. Vivamus gravida, neque nec interdum cursus, erat ligula.</div>
+
+
+            </div>
+            <div class="testboxes">
+                <div class="testbox1">
+                    <div class="testicon"><i class="fa-solid fa-quote-left"></i></div>
+                    <div class="testpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        laboriosam quis porro, commodi voluptatem perferendis?</div>
+
+                    <div class="testpropic1"></div>
+                    <div class="testname">Devid Gorge</div>
+                    <div class="testaddress">New york , USA</div>
+                </div>
+                <div class="testbox2">
+                    <div class="testicon"><i class="fa-solid fa-quote-left"></i></div>
+                    <div class="testpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        laboriosam quis porro, commodi voluptatem perferendis?</div>
+
+                    <div class="testpropic2"></div>
+                    <div class="testname">Jessi Jones</div>
+                    <div class="testaddress">Morroco, Italy</div>
+                </div>
+                <div class="testbox3">
+                    <div class="testicon"><i class="fa-solid fa-quote-left"></i></div>
+                    <div class="testpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        laboriosam quis porro, commodi voluptatem perferendis?</div>
+
+                    <div class="testpropic3"></div>
+                    <div class="testname">Rachi Singh</div>
+                    <div class="testaddress">Moradabad , India</div>
+
+
+                </div>
+
+            </div>
+            <div class="more">
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+        </div>
+        <div class="blogs">
+            <div class="blogs1">
+                <div class="blpic1"></div>
+                <div class="bltxt1">
+                    <div class="blsubtxt1">Full of Spices & Taste</div>
+                    <div class="blsubtxt2">Lor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, molestias!
+                        em ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere, autem sequi sunt soluta
+                        consequatur! Quam eveniet magni tenetur fugiat!</div>
+
+                    <div class="blsubtxt3"><button>Learn More</button></div>
+                </div>
+            </div>
+            <div class="blogs2">
+                <div class="bltxt2">
+
+                    <div class="blsubtxt1">Midnight Deals</div>
+                    <div class="blsubtxt2">Lor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, molestias!
+                        em ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere, autem sequi sunt soluta
+                        consequatur! Quam eveniet magni tenetur fugiat!</div>
+
+                    <div class="blsubtxt3"><button style="background-color: rgb(242, 67, 67); ;">Learn More</button>
+                    </div>
+
+                </div>
+                <div class="blpic2"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="location">
+        
+
+    </div>
+
+
+
+
+</body>
+
+</html>
